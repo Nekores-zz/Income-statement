@@ -21,7 +21,7 @@ export function IncomeStatement() {
   const classes = useStyles();
   return (
     <Widget className={classes.income_statement}>
-      <H2 className={classes.title}>The Income Statement</H2>
+      <H2 className={classes.title}>The Statement</H2>
       <Divider className={classes.line_break} />
       <Container className={classes.table_container}>
         <Widget className={classes.income_statement_table}>
