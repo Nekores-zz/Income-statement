@@ -18,10 +18,7 @@ export default function FeaturePage() {
     <div>
       <Helmet>
         <title>Feature Page</title>
-        <meta
-          name="description"
-          content="Feature page of React.js Boilerplate application"
-        />
+        <meta name="description" content="Income Statement" />
       </Helmet>
       <H1>
         <FormattedMessage {...messages.header} />
