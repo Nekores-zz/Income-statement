@@ -19,11 +19,10 @@ const useStyles = makeStyles(theme => ({
   },
   table_header: {
     display: 'flex',
-    marginTop: '4rem',
     border: '1px solid #949393',
-    '@media (max-width: 576px)': {
-      marginTop: '1rem',
-    },
+    // '@media (max-width: 576px)': {
+    //   marginTop: '1rem',
+    // },
   },
   first_table: {
     paddingTop: '3rem',

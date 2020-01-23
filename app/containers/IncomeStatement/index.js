@@ -22,7 +22,6 @@ export function IncomeStatement() {
   return (
     <Widget className={classes.income_statement}>
       <H2 className={classes.title}>The Income Statement</H2>
-      <Divider className={classes.line_break} />
       <Container className={classes.table_container}>
         <Widget className={classes.income_statement_table}>
           <Widget className={classes.table_header}>

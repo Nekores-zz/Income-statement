@@ -30,7 +30,7 @@ const useStyles = makeStyles(theme => ({
     },
     '@media (max-width: 576px)': {
       height: '24px',
-      fontSize: '12px',
+      fontSize: '11px',
       lineHeight: 1,
       padding: '4px',
     },
