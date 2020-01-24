@@ -27,28 +27,28 @@ export function GrossProfitTable() {
           <Label LabelText="+Rent" />
           <span className={classes.label_span}>
             <p className={classes.operator}>+</p>
-            <Input />
+            <Input style={{ paddingLeft: '9px', paddingBottom: '5px' }} />
           </span>
         </div>
         <div className={classes.label_box}>
           <Label LabelText="+Marketing" />
           <span className={classes.label_span}>
             <p className={classes.operator}>+</p>
-            <Input />
+            <Input style={{ paddingLeft: '9px', paddingBottom: '5px' }} />
           </span>
         </div>
         <div className={classes.label_box}>
           <Label LabelText="+Selling expenses" />
           <span className={classes.label_span}>
             <p className={classes.operator}>+</p>
-            <Input />
+            <Input style={{ paddingLeft: '9px', paddingBottom: '5px' }} />
           </span>
         </div>
         <div className={classes.label_box}>
           <Label LabelText="+Depreciation" />
           <span className={classes.label_span}>
             <p className={classes.operator}>+</p>
-            <Input />
+            <Input style={{ paddingLeft: '9px', paddingBottom: '5px' }} />
           </span>
         </div>
         <div className={`${classes.label_box} ${classes.full_width}`}>

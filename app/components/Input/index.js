@@ -54,6 +54,7 @@ function Input(props) {
       <p className={classes.dollor}>{props.dollor}</p>
       <input
         className={`${props.className} ${classes.input_style}`}
+        style={props.style}
         value={props.value}
         name={props.name}
         onChange={props.onChange}

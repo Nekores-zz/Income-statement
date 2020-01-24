@@ -19,7 +19,9 @@ const useStyles = makeStyles(theme => ({
   },
   table_header: {
     display: 'flex',
+    justifyContent: 'space-between',
     border: '1px solid #949393',
+    padding: '.6rem',
     // '@media (max-width: 576px)': {
     //   marginTop: '1rem',
     // },
@@ -37,14 +39,20 @@ const useStyles = makeStyles(theme => ({
   bdr_top: {
     borderTop: '1px solid #000',
   },
+  date_box: {
+    display: 'flex',
+  },
   start_date: {
     paddingLeft: '1%',
+    width: '123px',
     '@media (max-width: 576px)': {
       fontSize: '14px',
     },
   },
   end_date: {
-    paddingLeft: '45%',
+    // paddingLeft: '45%',
+    width: '100%',
+
     '@media (max-width: 576px)': {
       fontSize: '14px',
     },

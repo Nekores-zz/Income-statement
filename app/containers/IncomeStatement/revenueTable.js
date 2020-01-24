@@ -24,28 +24,28 @@ export function RevenueTable() {
           <Label LabelText="+Materials" />
           <span className={classes.label_span}>
             <p className={classes.operator}>+</p>
-            <Input />
+            <Input style={{ paddingLeft: '9px', paddingBottom: '5px' }} />
           </span>
         </div>
         <div className={classes.label_box}>
           <Label LabelText="+Labor" />
           <span className={classes.label_span}>
             <p className={classes.operator}>+</p>
-            <Input />
+            <Input style={{ paddingLeft: '9px', paddingBottom: '5px' }} />
           </span>
         </div>
         <div className={classes.label_box}>
           <Label LabelText="+Travel costs" />
           <span className={classes.label_span}>
             <p className={classes.operator}>+</p>
-            <Input />
+            <Input style={{ paddingLeft: '9px', paddingBottom: '5px' }} />
           </span>
         </div>
         <div className={classes.label_box}>
           <Label LabelText="+Warranty Allowance" />
           <span className={classes.label_span}>
             <p className={classes.operator}>+</p>
-            <Input />
+            <Input style={{ paddingLeft: '9px', paddingBottom: '5px' }} />
           </span>
         </div>
         <Divider className={classes.total_break} />
