@@ -41,12 +41,17 @@ const useStyles = makeStyles(theme => ({
   },
   date_box: {
     display: 'flex',
+    '@media (max-width: 576px)': {
+      flexDirection: 'column',
+      alignItems: 'flex-start',
+    },
   },
   start_date: {
     paddingLeft: '1%',
     width: '123px',
     '@media (max-width: 576px)': {
       fontSize: '14px',
+      margin: 0,
     },
   },
   end_date: {
@@ -55,6 +60,7 @@ const useStyles = makeStyles(theme => ({
 
     '@media (max-width: 576px)': {
       fontSize: '14px',
+      margin: 0,
     },
   },
   label_box: {
