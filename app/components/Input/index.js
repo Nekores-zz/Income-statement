@@ -23,6 +23,7 @@ const useStyles = makeStyles(theme => ({
     background: '#fdf594',
     paddingLeft: '22px',
     paddingBottom: '15px',
+    fontSize: '14px',
     '&:focus': {
       outline: 'none',
     },
