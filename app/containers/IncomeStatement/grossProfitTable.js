@@ -16,43 +16,43 @@ export function GrossProfitTable() {
     <div className={`${classes.first_table} ${classes.bdr_top}`}>
       <div className={classes.left_content}>
         <div className={`${classes.label_box} ${classes.full_width}`}>
-          <Label LabelText="= Gross profit" />
+          <Label LabelText="= GROSS PROFIT" />
           <span className={classes.label_span}>
             <p className={classes.operator}>=</p>
             <Input dollor="$" />
           </span>
         </div>
-        <Label LabelText="SG&A expenses" />
+        <Label LabelText="SG&A EXPENSES" />
         <div className={classes.label_box}>
-          <Label LabelText="+Rent" />
+          <Label LabelText="+RENT" />
           <span className={classes.label_span}>
             <p className={classes.operator}>+</p>
             <Input style={{ paddingLeft: '9px', paddingBottom: '5px' }} />
           </span>
         </div>
         <div className={classes.label_box}>
-          <Label LabelText="+Marketing" />
+          <Label LabelText="+MARKETING" />
           <span className={classes.label_span}>
             <p className={classes.operator}>+</p>
             <Input style={{ paddingLeft: '9px', paddingBottom: '5px' }} />
           </span>
         </div>
         <div className={classes.label_box}>
-          <Label LabelText="+Selling expenses" />
+          <Label LabelText="+SELLING EXPENSES" />
           <span className={classes.label_span}>
             <p className={classes.operator}>+</p>
             <Input style={{ paddingLeft: '9px', paddingBottom: '5px' }} />
           </span>
         </div>
         <div className={classes.label_box}>
-          <Label LabelText="+Depreciation" />
+          <Label LabelText="+DEPRECIATION" />
           <span className={classes.label_span}>
             <p className={classes.operator}>+</p>
             <Input style={{ paddingLeft: '9px', paddingBottom: '5px' }} />
           </span>
         </div>
         <div className={`${classes.label_box} ${classes.full_width}`}>
-          <Label LabelText="= Total SG&A expenses" />
+          <Label LabelText="= TOTAL SG&A EXPENSES" />
           <span className={classes.label_span}>
             <p className={classes.operator}>-</p>
             <Input dollor="$" />

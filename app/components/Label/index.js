@@ -17,6 +17,7 @@ const useStyles = makeStyles(theme => ({
     fontFamily: 'Roboto',
     fontStyle: 'normal',
     fontWeight: 'normal',
+    textTransform: 'capitalize',
     fontSize: '14px',
     lineHeight: '14px',
     textAlign: 'start',

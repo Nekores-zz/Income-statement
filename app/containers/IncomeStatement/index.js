@@ -21,17 +21,29 @@ export function IncomeStatement() {
   const classes = useStyles();
   return (
     <Widget className={classes.income_statement}>
-      <H2 className={classes.title}>The Income Statement</H2>
+      <H2 className={classes.title}>THE INCOME STATEMENT</H2>
       <Container className={classes.table_container}>
         <Widget className={classes.income_statement_table}>
           <Widget className={classes.table_header}>
             <Widget className={classes.date_box}>
-              <h4 className={classes.start_date}>Beginning date</h4>
-              <Input style={{ paddingLeft: '9px', paddingBottom: '5px' }} />
+              <h4 className={classes.start_date}>BEGINNING DATE</h4>
+              <Input
+                style={{
+                  paddingLeft: '9px',
+                  paddingBottom: '5px',
+                  borderBottom: '2px dotted',
+                }}
+              />
             </Widget>
             <Widget className={classes.date_box}>
-              <h4 className={classes.end_date}>End date</h4>
-              <Input style={{ paddingLeft: '9px', paddingBottom: '5px' }} />
+              <h4 className={classes.end_date}>ENDING DATE &nbsp; </h4>
+              <Input
+                style={{
+                  paddingLeft: '9px',
+                  paddingBottom: '5px',
+                  borderBottom: '2px dotted',
+                }}
+              />
             </Widget>
           </Widget>
           <RevenueTable />

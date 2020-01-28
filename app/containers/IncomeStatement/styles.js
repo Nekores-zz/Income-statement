@@ -48,7 +48,7 @@ const useStyles = makeStyles(theme => ({
   },
   start_date: {
     paddingLeft: '1%',
-    width: '123px',
+    width: '140px',
     '@media (max-width: 576px)': {
       fontSize: '14px',
       margin: 0,
