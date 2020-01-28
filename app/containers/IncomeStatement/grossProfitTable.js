@@ -16,13 +16,13 @@ export function GrossProfitTable() {
     <div className={`${classes.first_table} ${classes.bdr_top}`}>
       <div className={classes.left_content}>
         <div className={`${classes.label_box} ${classes.full_width}`}>
-          <Label LabelText="= GROSS PROFIT" />
+          <Label LabelText="= Gross Profit" />
           <span className={classes.label_span}>
             <p className={classes.operator}>=</p>
             <Input dollor="$" />
           </span>
         </div>
-        <Label LabelText="SG&A EXPENSES" />
+        <Label LabelText="SG&A Expenses" />
         <div className={classes.label_box}>
           <Label LabelText="+RENT" />
           <span className={classes.label_span}>
@@ -31,28 +31,28 @@ export function GrossProfitTable() {
           </span>
         </div>
         <div className={classes.label_box}>
-          <Label LabelText="+MARKETING" />
+          <Label LabelText="+Marketing" />
           <span className={classes.label_span}>
             <p className={classes.operator}>+</p>
             <Input style={{ paddingLeft: '9px', paddingBottom: '5px' }} />
           </span>
         </div>
         <div className={classes.label_box}>
-          <Label LabelText="+SELLING EXPENSES" />
+          <Label LabelText="+Selling Expenses" />
           <span className={classes.label_span}>
             <p className={classes.operator}>+</p>
             <Input style={{ paddingLeft: '9px', paddingBottom: '5px' }} />
           </span>
         </div>
         <div className={classes.label_box}>
-          <Label LabelText="+DEPRECIATION" />
+          <Label LabelText="+Depreciation" />
           <span className={classes.label_span}>
             <p className={classes.operator}>+</p>
             <Input style={{ paddingLeft: '9px', paddingBottom: '5px' }} />
           </span>
         </div>
         <div className={`${classes.label_box} ${classes.full_width}`}>
-          <Label LabelText="= TOTAL SG&A EXPENSES" />
+          <Label LabelText="= Total SG&A Expenses" />
           <span className={classes.label_span}>
             <p className={classes.operator}>-</p>
             <Input dollor="$" />

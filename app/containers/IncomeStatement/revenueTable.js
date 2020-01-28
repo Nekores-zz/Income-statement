@@ -16,33 +16,33 @@ export function RevenueTable() {
     <div className={classes.first_table}>
       <div className={classes.left_content}>
         <div className={`${classes.label_box} ${classes.full_width}`}>
-          <Label LabelText="REVENUE" />
+          <Label LabelText="Revenue" />
           <Input dollor="$" />
         </div>
-        <Label LabelText="COST OF GOODS" />
+        <Label LabelText="Cost of Goods" />
         <div className={classes.label_box}>
-          <Label LabelText="+MATERIALS" />
+          <Label LabelText="+Materials" />
           <span className={classes.label_span}>
             <p className={classes.operator}>+</p>
             <Input style={{ paddingLeft: '9px', paddingBottom: '5px' }} />
           </span>
         </div>
         <div className={classes.label_box}>
-          <Label LabelText="+LABOR" />
+          <Label LabelText="+Labor" />
           <span className={classes.label_span}>
             <p className={classes.operator}>+</p>
             <Input style={{ paddingLeft: '9px', paddingBottom: '5px' }} />
           </span>
         </div>
         <div className={classes.label_box}>
-          <Label LabelText="+TRAVEL COSTS" />
+          <Label LabelText="+Travel Costs" />
           <span className={classes.label_span}>
             <p className={classes.operator}>+</p>
             <Input style={{ paddingLeft: '9px', paddingBottom: '5px' }} />
           </span>
         </div>
         <div className={classes.label_box}>
-          <Label LabelText="+WARRANTY ALLOWANCE" />
+          <Label LabelText="+Warranty Allowance" />
           <span className={classes.label_span}>
             <p className={classes.operator}>+</p>
             <Input style={{ paddingLeft: '9px', paddingBottom: '5px' }} />
@@ -50,7 +50,7 @@ export function RevenueTable() {
         </div>
         <Divider className={classes.total_break} />
         <div className={`${classes.label_box} ${classes.full_width}`}>
-          <Label LabelText="= TOTAL COST OF GOODS SOLD" />
+          <Label LabelText="= Total Cost of Goods Sold" />
           <span className={classes.label_span}>
             <p className={classes.operator}>-</p>
             <Input dollor="$" />
