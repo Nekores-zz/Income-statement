@@ -49,6 +49,27 @@ const useStyles = makeStyles(theme => ({
 }));
 
 function Input(props) {
+  function addComma(inputValue) {
+    if (typeof inputValue === 'number') {
+      return inputValue
+        .toString()
+        .replace(/\D/g, '')
+        .replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    }
+    return inputValue.replace(/\D/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  }
+  const handleComma = (event, id) => {
+    if (event.which == 48 || event.which == 8) {
+      // do nothing
+    } else if (event.which < 48 || event.which > 57) {
+      event.preventDefault();
+    }
+    setTimeout(function() {
+      const input = document.getElementById(id);
+      const newValue = input.value === '' ? '' : addComma(input.value);
+      input.value = newValue;
+    }, 0.5);
+  };
   const classes = useStyles();
   return (
     <div className={classes.input_box}>
@@ -60,6 +81,8 @@ function Input(props) {
         name={props.name}
         onChange={props.onChange}
         type={props.type}
+        id={props.id}
+        onKeyDown={event => handleComma(event, props.id)}
       />
     </div>
   );

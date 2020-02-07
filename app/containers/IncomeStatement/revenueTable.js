@@ -17,35 +17,47 @@ export function RevenueTable() {
       <div className={classes.left_content}>
         <div className={`${classes.label_box} ${classes.full_width}`}>
           <Label LabelText="Revenue" />
-          <Input dollor="$" />
+          <Input id="revenue1" dollor="$" />
         </div>
         <Label LabelText="Cost of Goods sold" />
         <div className={classes.label_box}>
           <Label LabelText="+Materials" />
           <span className={classes.label_span}>
             <p className={classes.operator}>+</p>
-            <Input style={{ paddingLeft: '9px', paddingBottom: '5px' }} />
+            <Input
+              id="revenue2"
+              style={{ paddingLeft: '9px', paddingBottom: '5px' }}
+            />
           </span>
         </div>
         <div className={classes.label_box}>
           <Label LabelText="+Labor" />
           <span className={classes.label_span}>
             <p className={classes.operator}>+</p>
-            <Input style={{ paddingLeft: '9px', paddingBottom: '5px' }} />
+            <Input
+              id="revenue3"
+              style={{ paddingLeft: '9px', paddingBottom: '5px' }}
+            />
           </span>
         </div>
         <div className={classes.label_box}>
           <Label LabelText="+Travel Costs" />
           <span className={classes.label_span}>
             <p className={classes.operator}>+</p>
-            <Input style={{ paddingLeft: '9px', paddingBottom: '5px' }} />
+            <Input
+              id="revenue4"
+              style={{ paddingLeft: '9px', paddingBottom: '5px' }}
+            />
           </span>
         </div>
         <div className={classes.label_box}>
           <Label LabelText="+Warranty Allowance" />
           <span className={classes.label_span}>
             <p className={classes.operator}>+</p>
-            <Input style={{ paddingLeft: '9px', paddingBottom: '5px' }} />
+            <Input
+              id="revenue5"
+              style={{ paddingLeft: '9px', paddingBottom: '5px' }}
+            />
           </span>
         </div>
         <Divider className={classes.total_break} />
@@ -53,7 +65,7 @@ export function RevenueTable() {
           <Label LabelText="= Total Cost of Goods Sold" />
           <span className={classes.label_span}>
             <p className={classes.operator}>-</p>
-            <Input dollor="$" />
+            <Input id="revenue6" dollor="$" />
           </span>
         </div>
       </div>
