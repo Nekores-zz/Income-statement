@@ -5,17 +5,16 @@
  */
 
 import React from 'react';
-import Container from '@material-ui/core/Container';
+import { Container, Typography } from '@material-ui/core';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { compose } from 'redux';
 import RevenueTable from './revenueTable';
 import H2 from '../../components/H2';
 import Widget from '../../components/Widget';
 import Input from '../../components/Input';
 import GrossProfitTable from './grossProfitTable';
 import useStyles from './styles';
-
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import { compose } from 'redux';
 
 export function IncomeStatement() {
   const classes = useStyles();
@@ -47,6 +46,52 @@ export function IncomeStatement() {
           <RevenueTable />
         </Widget>
         <GrossProfitTable />
+      </Container>
+      {/* bottom text */}
+      <Container>
+        <Typography variant="h5">Transaction Summary</Typography>
+        <ol>
+          <li>
+            <p>Invest $5,000 and borrow $10,000.</p>
+          </li>
+          <li>
+            <p>
+              Pay $3,000 cash for rent – Expense first month for $1,000.
+              Purchase a fixed asset for $3,000 and pay $1,000 in cash.
+            </p>
+          </li>
+          <li>
+            <p>
+              Receive a $50,000 order for 10 units and a $10,000 deposit from
+              the customer. Receive 15 systems from supplier @ $3,000 per system
+              ($45,000 on account).
+            </p>
+          </li>
+          <li>
+            <p>
+              Install 10 systems: materials $30,000, labor $4,000, travel cost
+              $1,000, warranty $2,000. Invoice for the balance of the sale
+              $40,000.
+            </p>
+          </li>
+          <li>
+            <p>Pay $10,000 cash to XYZ Electronics $4,000 payroll.</p>
+          </li>
+          <li>
+            <p>
+              Pay $2,000 for marketing expense and owe $3,000 for selling
+              expense.
+            </p>
+          </li>
+          <li>
+            <p>
+              Borrow $10,000 from the bank and pay $10,000 to XYZ Electronics.
+              Depreciation $50.
+            </p>
+          </li>
+        </ol>
+        <br />
+        <br />
       </Container>
     </Widget>
   );

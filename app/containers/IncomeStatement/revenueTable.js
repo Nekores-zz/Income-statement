@@ -5,9 +5,9 @@
  */
 
 import React from 'react';
+import Divider from '@material-ui/core/Divider';
 import Label from '../../components/Label';
 import Input from '../../components/Input';
-import Divider from '@material-ui/core/Divider';
 import useStyles from './styles';
 
 export function RevenueTable() {
@@ -19,7 +19,7 @@ export function RevenueTable() {
           <Label LabelText="Revenue" />
           <Input dollor="$" />
         </div>
-        <Label LabelText="Cost of Goods" />
+        <Label LabelText="Cost of Goods sold" />
         <div className={classes.label_box}>
           <Label LabelText="+Materials" />
           <span className={classes.label_span}>
